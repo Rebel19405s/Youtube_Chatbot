@@ -34,13 +34,49 @@ An **AI-powered chatbot** that allows users to query a YouTube video’s transcr
 
 ---
 
-## 📦 Installation  
+## ⚙️ Installation
 
-Clone the repository and install dependencies:  
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/yourusername/youtube-transcript-chatbot.git
+cd youtube-transcript-chatbot
+```
+### 2️⃣ Install Python Dependencies
+
+Create a virtual environment first.
+```bash
+pip install -r requirements.txt
+```
+### 3️⃣ Install Ollama
+
+Go to the Ollama website and download Ollama for your system.
+link : (https://ollama.com/download)
+After installing, open Command Prompt / Terminal and run the following commands:
 
 ```bash
-git clone https://github.com/your-username/youtube-transcript-chatbot.git
-cd youtube-transcript-chatbot
+ollama run llama3.1
+ollama run nomic-embed-text
+```
 
-pip install -r requirements.txt
+This will install:
 
+llama3.1 → the chat model used for answering questions
+
+nomic-embed-text → the embedding model used for vector storage
+
+After installation, close the command prompt.
+
+### ▶️ Usage
+
+Run the chatbot with:
+```bash
+python main.py
+```
+
+Ask your questions interactively. Type exit anytime to quit.
+
+### 📂 Project Structure
+📦 youtube-transcript-chatbot
+ ┣ 📜 main.py              # Entry point for chatbot
+ ┣ 📜 requirements.txt     # Dependencies
+ ┣ 📜 README.md 
